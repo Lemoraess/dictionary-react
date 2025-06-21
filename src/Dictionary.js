@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
+import Results from "./Results";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
 
   function getResponse(response) {
-    console.log(response);
+    setResults(response.data);
   }
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}`);
 
     let apiKey = "5btac2eb2ed52b236021789ofe9a3348";
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=sunset&key=${apiKey}`;
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(getResponse);
   }
 
@@ -28,6 +29,7 @@ export default function Dictionary() {
         <input type="search" onChange={changeKeyword} />
         <input type="submit" />
       </form>
+      <Results results={results} />
     </div>
   );
 }
