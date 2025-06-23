@@ -1,5 +1,5 @@
 .App {
-  max-width: 600px;
+  max-width: 900px;
   display: block;
   margin: 0 auto;
   font-family: monospace;
@@ -19,4 +19,10 @@ footer {
   margin: 30px;
   opacity: 0.5;
   font-weight: bold;
+}
+
+@media (max-width: 960) {
+  .App {
+    margin: 30px;
+  }
 }

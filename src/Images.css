@@ -1,0 +1,16 @@
+.Images img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .Images {
+    grid-template-columns: 1fr;
+  }
+}
