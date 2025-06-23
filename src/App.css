@@ -2,6 +2,7 @@
   max-width: 600px;
   display: block;
   margin: 0 auto;
+  font-family: monospace;
 }
 
 .App-header {
@@ -16,4 +17,6 @@
 footer {
   text-align: center;
   margin: 30px;
+  opacity: 0.5;
+  font-weight: bold;
 }

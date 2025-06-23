@@ -1,0 +1,14 @@
+:root {
+  --secundary-color: #8c6dfd;
+}
+
+.Results h2 {
+  color: var(--secundary-color);
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.Results h4 {
+  opacity: 0.7;
+}

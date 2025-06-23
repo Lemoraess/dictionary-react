@@ -1,0 +1,11 @@
+.Synonyms span {
+  color: #d8b885;
+}
+
+.Synonyms li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+  font-weight: bold;
+  color: #d8b885;
+}
