@@ -21,8 +21,8 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width: 960) {
-  .App {
-    margin: 30px;
+@media (max-width: 600px) {
+  .App-header {
+    margin: 10px;
   }
 }

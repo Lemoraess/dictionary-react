@@ -56,6 +56,7 @@ export default function Dictionary(props) {
               type="search"
               onChange={changeKeyword}
               className="searchBox"
+              placeholder="Enter a word.."
             />
             <input type="submit" className="searchButton" />
           </form>

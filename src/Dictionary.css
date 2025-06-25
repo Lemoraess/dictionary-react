@@ -44,6 +44,10 @@
   justify-content: space-around;
 }
 
+input::placeholder {
+  font-size: 10px;
+}
+
 .Dictionary .searchBox {
   padding: 10px;
   width: 70%;
@@ -62,5 +66,39 @@
 @media (max-width: 960px) {
   .Dictionary {
     margin: 20px;
+  }
+
+  .Dictionary {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+  }
+
+  .Dictionary section {
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+
+  .Dictionary h1 {
+    margin: 10px;
+    font-size: 40px;
+  }
+
+  .Dictionary form {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .Dictionary .searchBox {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .Dictionary .searchButton {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 }
